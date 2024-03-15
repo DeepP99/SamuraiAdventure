@@ -64,6 +64,15 @@ body{
   }
 }
 
+@keyframes moveLeftAnimation {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100px); /* Adjust the distance as needed */
+  }
+}
+
 
 
 
