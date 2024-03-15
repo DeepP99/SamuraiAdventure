@@ -42,8 +42,19 @@ body{
     background-color: rgb(83, 83, 83);
 }
 
+.obstacle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}
+
+
+
+
 
 @keyframes jumpAnimation {
+
   0% {
       transform: translateY(0);
   }
@@ -53,25 +64,10 @@ body{
   100% {
       transform: translateY(0);
   }
+
 }
 
-@keyframes moveRightAnimation {
-  0% {
-      transform: translateX(0);
-  }
-  100% {
-      transform: translateX(100px);
-  }
-}
 
-@keyframes moveLeftAnimation {
-  0% {
-      transform: translateX(0);
-  }
-  100% {
-      transform: translateX(-100px); 
-  }
-}
 
 
 
