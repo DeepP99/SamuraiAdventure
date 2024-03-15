@@ -29,7 +29,7 @@ body{
   bottom: 160px;
   left: 20px;
   transform: translateY(-50);
-  animation: jumpAnimation 1s ease infinite;
+  animation: jumpAnimation 0.5s ease infinite; 
 }
 
 
@@ -48,12 +48,23 @@ body{
       transform: translateY(0);
   }
   50% {
-      transform: translateY(-50px);
+      transform: translateY(-200px);
   }
   100% {
       transform: translateY(0);
   }
 }
+
+@keyframes moveRightAnimation {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(100px);
+  }
+}
+
+
 
 
 
