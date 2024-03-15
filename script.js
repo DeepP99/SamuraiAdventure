@@ -4,9 +4,6 @@ document.addEventListener('keydown', function(spacebarDown) {
     }
 });
 
-
-
-
 function jump() {
     const samurai = document.querySelector('.samurai');
     samurai.style.animation = 'none';
@@ -15,6 +12,12 @@ function jump() {
     })
 
 }
+
+function moveRight() {
+    const samurai = document.querySelector('.samurai');
+    samurai.style.animation = 'moveRightAnimation 0.5s linear forwards';
+}
+
 
 
 
