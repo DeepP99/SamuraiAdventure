@@ -29,8 +29,8 @@ body{
   bottom: 160px;
   left: 20px;
   transform: translateY(-50);
+  animation: jumpAnimation 1s ease infinite;
 }
-
 
 
 .ground {
@@ -41,6 +41,7 @@ body{
     height: 160px;
     background-color: rgb(83, 83, 83);
 }
+
 
 @keyframes jumpAnimation {
   0% {
