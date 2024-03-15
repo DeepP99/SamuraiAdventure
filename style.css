@@ -9,21 +9,21 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: grey;
 }
 
-.Container {
+#Container {
     width: 100%;
     height: 100vh;
     overflow: hidden;
     position: relative;
-    background-color: grey;
 }
 
 
-#player {
+.samurai {
   width: 100px;
   height: 100px;
-  background-color: yellow;
+  background-color: rgb(255, 208, 0);
   border-radius: 50%;
   position: absolute;
   bottom: 160px;
@@ -39,7 +39,19 @@ body{
     left: 0;
     width: 100%;
     height: 160px;
-    background-color: grey;
+    background-color: rgb(83, 83, 83);
+}
+
+@keyframes jumpAnimation {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-50px);
+  }
+  100% {
+      transform: translateY(0);
+  }
 }
 
 
