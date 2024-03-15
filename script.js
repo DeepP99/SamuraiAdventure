@@ -7,7 +7,7 @@ document.addEventListener('keydown', function(spacebarDown) {
 });
 
 
-
+ 
 function jump() {
     const samurai = document.querySelector('.samurai');
     samurai.style.animation = 'none';
@@ -18,6 +18,14 @@ function jump() {
 }
 
 
+
+ 
+
+
+
+
+
+  
 
 
 

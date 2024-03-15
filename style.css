@@ -27,10 +27,11 @@ body{
   border-radius: 50%;
   position: absolute;
   bottom: 160px;
-  left: 20px;
-  transform: translateY(-50);
-  animation: jumpAnimation 0.5s ease infinite; 
+  left: 20px; /* Adjust position as needed */
+  transform: translateY(-50s);
+  animation: jumpAnimation 0.5s ease infinite ;
 }
+
 
 
 .ground {
@@ -43,11 +44,18 @@ body{
 }
 
 .obstacle {
-  position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-color: red;
+  position: absolute;
+  bottom: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
 }
+
+
 
 
 
@@ -66,6 +74,16 @@ body{
   }
 
 }
+
+/* @keyframes moveScreenAnimation {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+} */
+
 
 
 
