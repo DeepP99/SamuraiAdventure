@@ -17,6 +17,19 @@ function jump() {
 
 }
 
+function moveScreen() {
+    const container = document.getElementById('.Container');
+    container.style.animation = 'moveLeft 1s linear forwards';
+    setTimeout(() => {
+        container.style.animation = 'none';
+    }, 1000);
+}
+
+
+
+
+
+
 
 
  
