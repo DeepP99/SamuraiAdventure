@@ -7,12 +7,21 @@ document.addEventListener('keydown', function(spacebarDown) {
     }
 });
 
+// Event listener for left and right arrow keys
+document.addEventListener('keydown', function(event) {
+    if (event.code === 'ArrowLeft') {
+        moveLeft();
+    } else if (event.code === 'ArrowRight') {
+        moveRight();
+    }
+});
+
 function jump() {
     const samurai = document.querySelector('#samurai');
     samurai.style.animation = 'none';
     setTimeout(() => {
         samurai.style.animation = 'jumpAnimation 0.5s ease';
-    }, 50); 
+    }, 50);  
 
     // Increment the jump count when the samurai jumps
     jumpCount++;
@@ -25,6 +34,10 @@ let isAlive = setInterval(function () {
 
     const samuraiRect = samurai.getBoundingClientRect();
     const obstacleRect = obstacle.getBoundingClientRect();
+
+    console.log("Samurai:", samuraiRect);
+    console.log("Obstacle:", obstacleRect);
+    
 
     // Check for collision
     if (
@@ -65,25 +78,25 @@ function updateCounter() {
 // Call startGame() to start the game
 startGame();
 
-  
 
 
 
 
 
 
- 
-
-
-
-
- 
 
 
 
 
 
-  
+
+
+
+
+
+
+
+
 
 
 
