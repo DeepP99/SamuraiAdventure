@@ -18,18 +18,17 @@ body{
     overflow: hidden;
     position: relative;
 }
+ 
 
-
-.samurai {
+#samurai {
   width: 100px;
   height: 100px;
   background-color: rgb(255, 208, 0);
   border-radius: 50%;
   position: absolute;
   bottom: 160px;
-  left: 100 px; 
-  transform: translateY(-50s);
-  animation: jumpAnimation 0.5s ease infinite ;
+  left: 100px;  
+
 }
 
 
@@ -43,16 +42,16 @@ body{
     background-color: rgb(83, 83, 83);
 }
 
-.obstacle {
+#obstacle {
   width: 50px;
-  height: 50px;
-  background-color: red;
+  height: 75px; 
+  background-color: red;  
   position: absolute;
   bottom: 160px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  animation: moveLeft 2s infinite; 
+  animation: moveLeft 2s infinite linear; 
   
 }
 
@@ -63,7 +62,7 @@ body{
       transform: translateY(0);
   }
   50% {
-      transform: translateY(-200px);
+      transform: translateY(-300px); 
   }
   100% {
       transform: translateY(0);
