@@ -56,6 +56,8 @@ https://www.w3schools.com/html/html_links.asp
 
 https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent
 
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight
+
 
 
 
