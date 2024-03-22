@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontal centering */
+    justify-content: space-around; /* Vertical centering */
+    height: 100vh; /* Adjust the height as needed */
+    background-image: url('Assets/startbg.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    color: red; /* Set the color of h1 to red */
+}
+
+p {
+    color: blue; /* Set the color of p to blue */
+}
+
+.start-game a {
+    color: purple; /* Set the color of the "Start Game" link to purple */
+}
+
+
+
+
+
+
+
+
+
+
+

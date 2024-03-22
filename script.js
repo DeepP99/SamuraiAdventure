@@ -7,14 +7,14 @@ document.addEventListener('keydown', function(spacebarDown) {
     }
 });
 
-// Event listener for left and right arrow keys
-document.addEventListener('keydown', function(event) {
-    if (event.code === 'ArrowLeft') {
-        moveLeft();
-    } else if (event.code === 'ArrowRight') {
-        moveRight();
+// Event listener for mouse click
+document.addEventListener('click', function(event) {
+    // Restart the game if the alert message is clicked
+    if (event.target.classList.contains('restart-game')) {
+        startGame(); // Restart the game
     }
 });
+
 
 function jump() {
     const samurai = document.querySelector('#samurai');
@@ -51,6 +51,17 @@ let isAlive = setInterval(function () {
     }
 }, 10);
 
+// function stopGame() {
+//     clearInterval(isAlive);
+//     const obstacle = document.querySelector('#obstacle');
+//     obstacle.style.animation = 'none';
+
+//     const samurai = document.querySelector('#samurai');
+//     samurai.style.animation = 'none';
+
+//     alert('Game Over! Samurai collided with obstacle.');
+// }
+
 function stopGame() {
     clearInterval(isAlive);
     const obstacle = document.querySelector('#obstacle');
@@ -59,7 +70,12 @@ function stopGame() {
     const samurai = document.querySelector('#samurai');
     samurai.style.animation = 'none';
 
-    alert('Game Over! Samurai collided with obstacle.');
+    // Display alert message with a clickable button to restart the game
+    const alertMessage = 'Game Over! Samurai collided with obstacle. Click to restart';
+    alert(alertMessage);
+
+    // Update the alert message to be clickable
+    document.querySelector('.alert').classList.add('restart-game');
 }
 
 // Function to start the game
