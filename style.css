@@ -60,20 +60,19 @@ body{
   background-image: url(Assets/obstacle.jpeg);
   background-size: cover;
   background-position: center;
+  opacity: 0.7;
 
   
 }
 
 #counter {
     position: absolute;
-    top: 20px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
-    color: white; /* Optional: change counter text color */
-    font-size: 16px; /* Optional: change counter font size */
+    top: 20px; 
+    right: 20px; 
+    color: white; 
+    font-size: 30px; 
+    font-family: Anta, static;
 }
-
-
-
 
 @keyframes jumpAnimation {
 

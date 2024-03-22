@@ -12,21 +12,39 @@ body{
     align-items: center; /* Horizontal centering */
     justify-content: space-around; /* Vertical centering */
     height: 100vh; /* Adjust the height as needed */
-    background-image: url(Assets/startbg.jpeg)
+    background-image: url(Assets/startbg.jpeg);
     background-size: cover;
-    background-position: center;
 }
 
 h1 {
-    color: red; /* Set the color of h1 to red */
+    color: red;
+    font-family: Anta;
+    font-size: 75px;
 }
 
 p {
-    color: red; /* Set the color of p to blue */
+    color: red;
+    font-family: Anta;
+    font-size: 30px;
 }
 
-.start-game a {
-    color: purple; /* Set the color of the "Start Game" link to purple */
+.start-game{
+    /* color: purple; */
+    background-color: red;
+    color: black;
+    padding: 30px, 60px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: Anta, static;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-game:hover{
+    background-color: darkred;
 }
 
 
