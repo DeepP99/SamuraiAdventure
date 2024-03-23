@@ -1,4 +1,4 @@
-*{
+/* *{
     box-sizing: border-box;
 }
 
@@ -95,8 +95,162 @@ body{
     100% {
         transform: translateX(calc(-100% - 1000px)); 
     }
-}
+} */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: grey;
+    background-image: url(Assets/mainbg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  #Container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  #samurai {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 208, 0);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 160px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  background-image: url(Assets/samurai.jpeg);
+  background-size: cover;
+  background-position: center; 
+  
+  }
+  
+  .ground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background-color: rgb(83, 83, 83);
+    opacity: 0.3 ;
+  }
+  
+  #obstacle {
+  width: 50px;
+  height: 75px; 
+  background-color: red;  
+  position: absolute;
+  bottom: 160px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  animation: moveLeft 2s infinite linear;
+  background-image: url(Assets/obstacle.jpeg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  
+  
+  }
+  
+  #counter {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    color: white; 
+    font-size: 30px; 
+    font-family: Anta, static;
+  }
+  
+  @keyframes jumpAnimation {
+  
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-300px); 
+  }
+  100% {
+      transform: translateY(0);
+  }
+  
+  }
+  
+  @keyframes moveLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(calc(-100% - 1000px));
+    }
+  }
+
+  
 
 
 
